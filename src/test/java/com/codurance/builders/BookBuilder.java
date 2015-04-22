@@ -1,11 +1,11 @@
 package com.codurance.builders;
 
-import com.codurance.solid.Book;
-import com.codurance.solid.BookType;
+import com.codurance.solid.product.Book;
+import com.codurance.solid.product.BookType;
 
-import static com.codurance.solid.BookType.COOKING;
-import static com.codurance.solid.BookType.IT;
-import static com.codurance.solid.BookType.TRAVEL;
+import static com.codurance.solid.product.BookType.COOKING;
+import static com.codurance.solid.product.BookType.IT;
+import static com.codurance.solid.product.BookType.TRAVEL;
 
 public class BookBuilder {
 

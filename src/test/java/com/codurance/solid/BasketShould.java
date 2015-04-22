@@ -1,5 +1,9 @@
 package com.codurance.solid;
 
+import com.codurance.solid.discounts.DiscountCalculator;
+import com.codurance.solid.payment.Basket;
+import com.codurance.solid.product.Book;
+import com.codurance.solid.product.Books;
 import org.junit.Test;
 
 import static java.util.Arrays.asList;

@@ -1,6 +1,15 @@
 package com.codurance.solid;
 
-import static com.codurance.solid.BookType.*;
+import com.codurance.solid.discounts.DiscountCalculator;
+import com.codurance.solid.discounts.Discounts;
+import com.codurance.solid.payment.Basket;
+import com.codurance.solid.product.Book;
+import com.codurance.solid.product.Books;
+
+import static com.codurance.solid.product.BookType.COOKING;
+import static com.codurance.solid.product.BookType.FANTASY;
+import static com.codurance.solid.product.BookType.IT;
+import static com.codurance.solid.product.BookType.TRAVEL;
 
 public class Application {
 
@@ -15,7 +24,8 @@ public class Application {
 		Book cooking_book_1 = new Book("Brazilian Flavours", COOKING, 10.00);
 
 		Books books = new Books();
-		DiscountCalculator discountCalculator = new DiscountCalculator();
+		Discounts discounts = new Discounts();
+		DiscountCalculator discountCalculator = new DiscountCalculator(discounts);
 
 		Basket basket = new Basket(books, discountCalculator);
 		basket.add(fantasy_book_1);

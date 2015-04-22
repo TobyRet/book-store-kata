@@ -1,4 +1,4 @@
-package com.codurance.solid;
+package com.codurance.solid.product;
 
 public class Book {
 

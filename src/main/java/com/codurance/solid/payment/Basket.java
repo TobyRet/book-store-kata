@@ -1,6 +1,10 @@
-package com.codurance.solid;
+package com.codurance.solid.payment;
 
 import java.util.List;
+
+import com.codurance.solid.discounts.DiscountCalculator;
+import com.codurance.solid.product.Book;
+import com.codurance.solid.product.Books;
 
 import static java.lang.Math.round;
 import static java.util.Collections.unmodifiableList;

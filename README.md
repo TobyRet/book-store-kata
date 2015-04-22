@@ -33,6 +33,6 @@ The Code has the following behaviour:
 
 - New features can be slid into the code almost without change
 	- Minor change on DiscountCalculator and NoDiscountBooks   
-- Changes while adding new functionality are small and localised
-- Changes happen in the main (application assembly) and not in the domain
+	- Changes while adding new functionality are small and localised
+	- Changes happen in the main (application assembly) and not in the domain
 	- This would happen if using Dependency Injection frameworks
