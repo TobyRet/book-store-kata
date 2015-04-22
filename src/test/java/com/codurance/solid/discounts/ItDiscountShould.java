@@ -14,12 +14,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class ItDiscountShould {
 
     @Test
-    public void return_zero_discount_if_there_are_no_IT_books() {
+    public void return_zero_if_there_are_no_IT_books() {
         List<Book> books = asList(aCookingBook().costing(10.0).build(), aTravelBook().costing(20.0).build());
 
         ItDiscount itDiscount = new ItDiscount();
 
-        assertThat(itDiscount.calculateFor(books), is(0.0));
+        assertThat(itDiscount.calculateDiscountedPriceFor(books), is(0.0));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class ItDiscountShould {
 
         ItDiscount itDiscount = new ItDiscount();
 
-        assertThat(itDiscount.calculateFor(books), is(0.9));
+        assertThat(itDiscount.calculateDiscountedPriceFor(books), is(27.0));
     }
 
     @Test
@@ -38,10 +38,10 @@ public class ItDiscountShould {
         List<Book> books = asList(
                 anITBook().costing(10.0).build(),
                 anITBook().costing(20.0).build(),
-                anITBook().costing(15.0).build());
+                anITBook().costing(10.0).build());
 
         ItDiscount itDiscount = new ItDiscount();
 
-        assertThat(itDiscount.calculateFor(books), is(0.7));
+        assertThat(itDiscount.calculateDiscountedPriceFor(books), is(28.0));
     }
 }

@@ -7,7 +7,7 @@ public class Discounts {
     private List<Discount> list;
 
     public Discounts() {
-        list = Arrays.asList(new CookingDiscount(), new TravelDiscount(), new ItDiscount(), new FantasyDiscount());
+        list = Arrays.asList(new NoDiscount(), new TravelDiscount(), new ItDiscount());
     }
 
     public List<Discount> getList() {
